@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lucas.securityrift.RegistroActivity">
+
+    <EditText
+        android:id="@+id/textNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="NOME"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/textTelefone"
+        app:layout_constraintEnd_toEndOf="@+id/textNome"
+        app:layout_constraintStart_toStartOf="@+id/textNome"
+        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+
+    <EditText
+        android:id="@+id/textTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="TELEFONE"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/textSenha"
+        app:layout_constraintEnd_toEndOf="@+id/textEmail"
+        app:layout_constraintStart_toStartOf="@+id/textEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <EditText
+        android:id="@+id/textSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="SENHA"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/textTelefone"
+        app:layout_constraintStart_toStartOf="@+id/textTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/textTelefone" />
+
+    <Button
+        android:id="@+id/botaoRegistro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/botaoRegistro"
+        app:layout_constraintEnd_toEndOf="@+id/textSenha"
+        app:layout_constraintStart_toStartOf="@+id/textSenha"
+        app:layout_constraintTop_toBottomOf="@+id/textSenha">
+
+        <CheckBox
+            android:id="@+id/checkAluno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ALUNO"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="396dp" />
+
+        <CheckBox
+            android:id="@+id/checkFuncionario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FUNCIONARIO"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <CheckBox
+            android:id="@+id/checkVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VISITANTE"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="396dp" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

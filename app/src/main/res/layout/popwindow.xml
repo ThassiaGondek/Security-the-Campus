@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:layout_marginVertical="0dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="414dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="96dp"
+                android:layout_weight="1"
+                android:text="Furto" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioButton"
+                android:layout_alignStart="@+id/radioButton"
+                android:layout_below="@+id/radioButton"
+                android:layout_weight="1"
+                android:text="Assalto" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioButton2"
+                android:layout_alignStart="@+id/radioButton2"
+                android:layout_below="@+id/radioButton2"
+                android:layout_weight="1"
+                android:text="Abuso/Assedio" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_below="@+id/radioButton3"
+                android:layout_weight="1"
+                android:text="Agressao" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioButton4"
+                android:layout_alignStart="@+id/radioButton4"
+                android:layout_below="@+id/radioButton4"
+                android:layout_weight="1"
+                android:text="Outro" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="86dp"
+            android:layout_marginRight="86dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="comentario"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton4"
+            android:layout_alignRight="@+id/radioButton4"
+            android:layout_below="@+id/texto"
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>
+
+</RelativeLayout>
