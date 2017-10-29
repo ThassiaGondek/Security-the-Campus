@@ -1,0 +1,2 @@
+# Security-the-Campus
+Observando relatos e a escassez de informação em relação a segurança, especialmente relativo a parte de transparência.Vamos coletar informações sobre segurança com ajuda de as pessoas  que frequentam o campus,  e deixar elas disponíveis de um modo interativo e fácil.
